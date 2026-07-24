@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Karina's Bakery - Our menu of freshly baked goods, meats, pastries, and specialties" />
+  <title>Menu | Karina's Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <input type="checkbox" id="mobile-toggle" />
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Karina's Bakery</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <label for="mobile-toggle" class="mobile-toggle-label" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+    </nav>
+    <div class="mobile-nav container">
+      <a href="index.html">Home</a>
+      <a href="menu.html" class="active">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Our Menu</h1>
+      <p>Discover our delicious selection of freshly baked goods</p>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="section-cream">
+    <div class="container">
+
+      <!-- Radio inputs for category filtering (placed before tabs for CSS sibling selector) -->
+      <input type="radio" name="category" id="tab-chicken" checked />
+      <input type="radio" name="category" id="tab-pastries" />
+      <input type="radio" name="category" id="tab-breads" />
+      <input type="radio" name="category" id="tab-specialties" />
+
+      <!-- Tab Labels -->
+      <div class="category-tabs">
+        <label for="tab-chicken">Chicken and Meats</label>
+        <label for="tab-pastries">Pastries</label>
+        <label for="tab-breads">Breads</label>
+        <label for="tab-specialties">Specialties</label>
+      </div>
+
+      <!-- Menu Grid -->
+      <div class="menu-grid">
+        <!-- Chicken and Meats -->
+        <div id="cat-chicken" class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+          <div class="product-card">
+            <div class="card-image"><span>&#127830;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Beef Stew</span>
+                <span class="card-price">$14.99</span>
+              </div>
+              <div class="card-subtitle">Carne Guisada</div>
+              <p class="card-desc">Hearty beef stew slow-cooked with vegetables and rich gravy.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127828;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Steak W/ onions &amp; peppers</span>
+                <span class="card-price">$13.99</span>
+              </div>
+              <div class="card-subtitle">Bistec Encebollado</div>
+              <p class="card-desc">Shredded chicken in a smoky tomato and chipotle sauce.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127830;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Grilled Steak</span>
+                <span class="card-price">$15.25</span>
+              </div>
+              <div class="card-subtitle">Carne Asada</div>
+              <p class="card-desc">Slow-roasted pulled pork, tender and seasoned to perfection.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127831;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Chicken Stew</span>
+                <span class="card-price">$12.49</span>
+              </div>
+              <div class="card-subtitle">Pollo Guisado</div>
+              <p class="card-desc">Marinated roasted chicken with citrus and herbs.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127830;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Beef Ribs</span>
+                <span class="card-price">$15.99</span>
+              </div>
+              <div class="card-subtitle">Costilla de Res</div>
+              <p class="card-desc">Marinated roasted chicken with citrus and herbs.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127831;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Chicken W/ Tajadas</span>
+                <span class="card-price">$13.99</span>
+              </div>
+              <div class="card-subtitle">Pollo con Tajada</div>
+              <p class="card-desc">Marinated roasted chicken with citrus and herbs.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127831;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Grilled Chicken</span>
+                <span class="card-price">$12.49</span>
+              </div>
+              <div class="card-subtitle">Pollo Asado</div>
+              <p class="card-desc">Marinated roasted chicken with citrus and herbs.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127858;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Beef Soup</span>
+                <span class="card-price">$14.99</span>
+              </div>
+              <div class="card-subtitle">Sopa de Res</div>
+              <p class="card-desc">Marinated roasted chicken with citrus and herbs.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127858;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Chicken Soup</span>
+                <span class="card-price">$12.99</span>
+              </div>
+              <div class="card-subtitle">Sopa de Pollo</div>
+              <p class="card-desc">Marinated roasted chicken with citrus and herbs.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pastries -->
+        <div id="cat-pastries" class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+          <div class="product-card">
+            <div class="card-image"><span>&#129360;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Butter Croissant</span>
+                <span class="card-price">$4</span>
+              </div>
+              <div class="card-subtitle">Cruas&aacute;n de Mantequilla</div>
+              <p class="card-desc">Flaky, buttery croissant baked to golden perfection.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127838;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Pain au Chocolat</span>
+                <span class="card-price">$5</span>
+              </div>
+              <div class="card-subtitle">Pan de Chocolate</div>
+              <p class="card-desc">French pastry filled with rich dark chocolate.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127856;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Fruit Danish</span>
+                <span class="card-price">$5</span>
+              </div>
+              <div class="card-subtitle">Dan&eacute;s de Frutas</div>
+              <p class="card-desc">Flaky pastry with custard and seasonal fruit topping.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127856;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Chocolate Eclair</span>
+                <span class="card-price">$6</span>
+              </div>
+              <div class="card-subtitle">&Eacute;clair de Chocolate</div>
+              <p class="card-desc">Choux pastry filled with vanilla custard and topped with chocolate glaze.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Breads -->
+        <div id="cat-breads" class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+          <div class="product-card">
+            <div class="card-image"><span>&#127838;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Sourdough Loaf</span>
+                <span class="card-price">$8</span>
+              </div>
+              <div class="card-subtitle">Pan de Masa Madre</div>
+              <p class="card-desc">Artisan sourdough with a crispy crust and tangy flavor.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127838;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">French Baguette</span>
+                <span class="card-price">$4</span>
+              </div>
+              <div class="card-subtitle">Baguette Francesa</div>
+              <p class="card-desc">Traditional French bread with a golden crust and soft interior.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127838;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Herb Focaccia</span>
+                <span class="card-price">$7</span>
+              </div>
+              <div class="card-subtitle">Focaccia de Hierbas</div>
+              <p class="card-desc">Italian flatbread with rosemary, olive oil, and sea salt.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127854;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Cinnamon Rolls</span>
+                <span class="card-price">$12</span>
+              </div>
+              <div class="card-subtitle">Rollos de Canela</div>
+              <p class="card-desc">Soft rolls swirled with cinnamon sugar and cream cheese glaze.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Specialties -->
+        <div id="cat-specialties" class="card-grid" style="grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));">
+          <div class="product-card">
+            <div class="card-image"><span>&#127858;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">French Macarons</span>
+                <span class="card-price">$18</span>
+              </div>
+              <div class="card-subtitle">Macarons Franceses</div>
+              <p class="card-desc">Assorted flavors of delicate almond meringue cookies.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127856;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Tiramisu</span>
+                <span class="card-price">$8</span>
+              </div>
+              <div class="card-subtitle">Tiramis&uacute;</div>
+              <p class="card-desc">Classic Italian dessert with espresso-soaked ladyfingers and mascarpone.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#129473;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">New York Cheesecake</span>
+                <span class="card-price">$7</span>
+              </div>
+              <div class="card-subtitle">Pay de Queso Nueva York</div>
+              <p class="card-desc">Creamy cheesecake with graham cracker crust and berry compote.</p>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="card-image"><span>&#127856;</span></div>
+            <div class="card-body">
+              <div class="card-header">
+                <span class="card-title">Fruit Tarts</span>
+                <span class="card-price">$6</span>
+              </div>
+              <div class="card-subtitle">Tartas de Frutas</div>
+              <p class="card-desc">Buttery tart shell with pastry cream and fresh seasonal fruits.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom Orders CTA -->
+  <section class="section-cream-dark cta-section">
+    <div class="container">
+      <h2>Can't Find What You're Looking For?</h2>
+      <p>We offer custom orders for special occasions. Contact us to create your perfect treat!</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us for Custom Orders</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Karina's Bakery</h3>
+          <p class="brand-text">Fresh baked goods made with love and the finest ingredients.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul class="hours-list">
+            <li>Monday - Friday: 7am - 7pm</li>
+            <li>Saturday: 8am - 6pm</li>
+            <li>Sunday: 8am - 2pm</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <p class="footer-copyright">&copy; 2026 Karina's Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

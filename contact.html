@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Karina's Bakery - Get in touch for orders, questions, or custom requests" />
+  <title>Contact | Karina's Bakery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <input type="checkbox" id="mobile-toggle" />
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Karina's Bakery</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" class="active">Contact</a>
+      </div>
+      <label for="mobile-toggle" class="mobile-toggle-label" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+    </nav>
+    <div class="mobile-nav container">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Contact Us</h1>
+      <p>We'd love to hear from you</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-cream">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <div class="contact-form">
+          <h2>Get in Touch</h2>
+          <form action="#" method="POST">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" class="form-input" rows="5" placeholder="Tell us about your inquiry or custom order..." required></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Message</button>
+          </form>
+        </div>
+
+        <!-- Visit & Info -->
+        <div class="visit-section">
+          <h2>Visit Our Bakery</h2>
+          <div class="info-card">
+            <div class="info-row-contact">
+              <span class="icon">&#128205;</span>
+              <div>
+                <h3>Address</h3>
+                <p>7027 Annapolis Rd<br />Landover Hills, MD 20784</p>
+              </div>
+            </div>
+            <div class="info-row-contact">
+              <span class="icon">&#128222;</span>
+              <div>
+                <h3>Phone</h3>
+                <p>(240) 615-8144</p>
+              </div>
+            </div>
+            <div class="info-row-contact">
+              <span class="icon">&#9993;&#65039;</span>
+              <div>
+                <h3>Email</h3>
+                <p>hello@karinasbakery.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Business Hours -->
+          <div class="hours-card">
+            <h3>Business Hours</h3>
+            <ul class="hours-list">
+              <li>
+                <span>Monday - Friday</span>
+                <span>7:00 AM - 7:00 PM</span>
+              </li>
+              <li>
+                <span>Saturday</span>
+                <span>8:00 AM - 6:00 PM</span>
+              </li>
+              <li>
+                <span>Sunday</span>
+                <span>8:00 AM - 2:00 PM</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-section" style="margin-top:2rem;">
+            <h3>Follow Us</h3>
+            <div class="social-links">
+              <a href="https://facebook.com" class="social-link" aria-label="Facebook" target="_blank" rel="noopener noreferrer">f</a>
+              <a href="https://instagram.com" class="social-link" aria-label="Instagram" target="_blank" rel="noopener noreferrer">&#128247;</a>
+              <a href="https://twitter.com" class="social-link" aria-label="Twitter" target="_blank" rel="noopener noreferrer">&#128038;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Karina's Bakery</h3>
+          <p class="brand-text">Fresh baked goods made with love and the finest ingredients.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul class="hours-list">
+            <li>Monday - Friday: 7am - 7pm</li>
+            <li>Saturday: 8am - 6pm</li>
+            <li>Sunday: 8am - 2pm</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <p class="footer-copyright">&copy; 2026 Karina's Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

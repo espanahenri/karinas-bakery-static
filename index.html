@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Karina's Bakery - Fresh baked goods, custom cakes, and delicious pastries made with love" />
+  <title>Karina's Bakery | Fresh Baked Goods</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- Mobile toggle checkbox (must be before header for CSS sibling selector) -->
+  <input type="checkbox" id="mobile-toggle" />
+
+  <!-- Header -->
+  <header class="header">
+    <nav class="nav container">
+      <a href="index.html" class="logo">Karina's Bakery</a>
+      <div class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <label for="mobile-toggle" class="mobile-toggle-label" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </label>
+    </nav>
+    <div class="mobile-nav container">
+      <a href="index.html" class="active">Home</a>
+      <a href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Karina's Bakery</h1>
+      <p>Fresh baked goods made with love every single day</p>
+    </div>
+  </section>
+
+  <!-- Welcome Section -->
+  <section class="section-cream">
+    <div class="container">
+      <div class="section-title">
+        <h2>Welcome to Our Bakery</h2>
+      </div>
+      <p class="section-subtitle">
+        At Karina's Bakery, we believe in using only the finest ingredients to create delicious treats
+        that bring joy to every occasion. From our oven to your table, every bite tells a story of passion and craft.
+      </p>
+
+      <div class="card-grid xl-4">
+        <!-- Beef Stew -->
+        <div class="product-card">
+          <div class="card-image"><span>&#127830;</span></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-title">Beef Stew</span>
+              <span class="card-price">$14.99</span>
+            </div>
+            <div class="card-subtitle">Carne Guisada</div>
+            <p class="card-desc">Hearty beef stew slow-cooked with vegetables and rich gravy.</p>
+          </div>
+        </div>
+
+        <!-- Butter Croissant -->
+        <div class="product-card">
+          <div class="card-image"><span>&#129360;</span></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-title">Butter Croissant</span>
+              <span class="card-price">$4</span>
+            </div>
+            <div class="card-subtitle">Cruas&aacute;n de Mantequilla</div>
+            <p class="card-desc">Flaky, buttery croissant baked to golden perfection.</p>
+          </div>
+        </div>
+
+        <!-- Cinnamon Rolls -->
+        <div class="product-card">
+          <div class="card-image"><span>&#127854;</span></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-title">Cinnamon Rolls</span>
+              <span class="card-price">$12</span>
+            </div>
+            <div class="card-subtitle">Rollos de Canela</div>
+            <p class="card-desc">Soft rolls swirled with cinnamon sugar and cream cheese glaze.</p>
+          </div>
+        </div>
+
+        <!-- French Macarons -->
+        <div class="product-card">
+          <div class="card-image"><span>&#127858;</span></div>
+          <div class="card-body">
+            <div class="card-header">
+              <span class="card-title">French Macarons</span>
+              <span class="card-price">$18</span>
+            </div>
+            <div class="card-subtitle">Macarons Franceses</div>
+            <p class="card-desc">Assorted flavors of delicate almond meringue cookies.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align:center; margin-top:3rem;">
+        <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us -->
+  <section class="section-cream-dark">
+    <div class="container">
+      <div class="two-col">
+        <div>
+          <h2 class="section-title" style="text-align:left;">Why Choose Us?</h2>
+          <ul class="features-list">
+            <li>
+              <span class="icon">&#10024;</span>
+              <span><strong>Fresh Daily:</strong> Everything is baked fresh every morning using traditional recipes.</span>
+            </li>
+            <li>
+              <span class="icon">&#127806;</span>
+              <span><strong>Quality Ingredients:</strong> We source only the finest ingredients from local suppliers.</span>
+            </li>
+            <li>
+              <span class="icon">&#10084;&#65039;</span>
+              <span><strong>Made with Love:</strong> Every item is crafted with care and attention to detail.</span>
+            </li>
+            <li>
+              <span class="icon">&#127874;</span>
+              <span><strong>Custom Orders:</strong> Special cakes and treats for your celebrations.</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="visit-card">
+          <h3 style="font-size:1.5rem; margin-bottom:1rem;">Visit Us Today</h3>
+          <p style="color:var(--brown-light); margin-bottom:1.5rem;">
+            Come experience the warmth of freshly baked goods at our shop.
+          </p>
+          <div class="info-row"><strong>Address:</strong> 7027 Annapolis Rd, Landover Hills, MD 20784</div>
+          <div class="info-row"><strong>Phone:</strong> (240) 615-8144</div>
+          <div class="info-row"><strong>Hours:</strong> Mon-Fri 7am-7pm</div>
+          <a href="contact.html" class="btn btn-gold" style="margin-top:1.5rem;">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h3>Karina's Bakery</h3>
+          <p class="brand-text">Fresh baked goods made with love and the finest ingredients.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="links-list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Hours</h4>
+          <ul class="hours-list">
+            <li>Monday - Friday: 7am - 7pm</li>
+            <li>Saturday: 8am - 6pm</li>
+            <li>Sunday: 8am - 2pm</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="footer-divider" />
+      <p class="footer-copyright">&copy; 2026 Karina's Bakery. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
